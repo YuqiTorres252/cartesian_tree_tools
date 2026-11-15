@@ -1,6 +1,6 @@
 [project]
 name = "cartesian-tree-tools"
-version = "0.1.0"
+version = "0.1.1"
 description = "Constructs a min-heap tree over a numeric array's indices in linear time."
 requires-python = ">=3.10"
 dependencies = []

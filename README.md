@@ -39,3 +39,10 @@ under value ties; if you need a different tie-break you should pre-process the v
   hit Python's recursion limit.
 - `tree[i]` returns `(value, left_child, right_child)` where missing children are
   `None`.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
